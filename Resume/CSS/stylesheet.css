@@ -1,0 +1,85 @@
+body {
+
+  font-family: 'Calibri', sans-serif;
+  font-size: 12px;
+  line-height: 1.15rem;
+  margin: .5in 1in 1in;
+
+
+}
+
+
+hr {
+border: 2px;
+border-style: solid;
+}
+
+li {
+  list-style: none;
+  line-height: 1.15rem;
+}
+
+h2 {
+  padding-top: 1rem;
+  font-size: 16px;
+}
+
+h4 {
+  padding: 1rem, 0,0,0;
+  /* font-size: 14px; */
+  font-size: 16px;
+}
+
+.headingSection {
+  text-align: center;
+  line-height: 1.15rem;
+  padding-bottom: 1rem;
+  margin-top: 0;
+}
+
+.headingSection h2 {
+  font-size: 16px;
+  padding-top: 0;
+
+}
+
+.mainSection {
+    padding-bottom: 1rem;
+}
+
+.col-3 ul{
+  padding-left:0;
+}
+
+.col-3 li {
+  line-height: 1.5rem;
+}
+
+.col-9 {
+  padding-left: 3rem;
+}
+
+.frameworksList {
+  margin-top: 30px;
+  /* margin-left: 25px; */
+}
+
+.frameworksListHr {
+  text-indent: 2rem:
+}
+
+.trainingSection li {
+  list-style-type: circle;
+  line-height: .7rem;
+  /* line-height: .5rem; */
+
+  padding-bottom: 0;
+}
+
+.trainingSection p {
+  font-size: 11px;
+  font-style: italic;
+  opacity: .5;
+  margin: 0;
+  padding-bottom: 1rem;
+}
