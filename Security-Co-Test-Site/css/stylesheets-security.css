@@ -1,5 +1,12 @@
+/* blue : #006ba1
+  text: #fff
+blue link box: background: linear-gradient(to bottom,#006ba1 0%,#0c387a 100%);
+gold link box: background: linear-gradient(to bottom,#dfca8a 0%,#c1ac6c 100%);
+h2 text + link text non menu blue: #0c387a
+content text: gray; */
+
 body {
-  font-family: "Helvetica",Verdana,Arial,sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 1.45;
@@ -9,33 +16,49 @@ h1 {
   font-size: 2rem;
 }
 
+hr {
+  border-style: solid;
+  border-width: 2px;
+  margin: 0;
+  border-color: #b5a060;
+  ;
+}
+
+
+/* //////////HEADER */
+.title {
+  background-size: cover;
+  background-color: #333;
+  color: #fff;
+    background: linear-gradient(to bottom, #545454 0%, #333 100%);
+}
+
+.topBar {
+  font-family: "Raleway", sans-serif;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: linear-gradient(to bottom, #006ba1 0%, #0c387a 100%);
+  /* background-color: #006ba1; */
+}
+
+.container-fluid {
+  padding: 1% 5% 1%;
+}
+
 .row {
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: .5rem;
 }
 
 .titleImage {
   width: 122px;
-}
-
-.topBar {
-  padding: 1rem;
-  font-size: 1.5rem;
-  background-color: blue;
+  padding-bottom: 1rem;
 }
 
 /* NAVBAR */
-
-.badgeImg {
-  padding-bottom: 1rem;
-}
-
-.bigHead {
-  padding-bottom: 1rem;
-}
-
 .navbar-collapse {
   flex-grow: 0;
 }
@@ -46,14 +69,13 @@ text-align: center;
   align-self: center;
 }
 
-.navbar-dark .navbar-brand{
-  font-family: "Helvetica",Verdana,Arial,sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 1.45;
-    color: #fff;
-    justify-content: space-around;
-
+.navbar-dark .navbar-brand {
+  font-family: "Helvetica", Verdana, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #fff;
+  justify-content: space-around;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -62,50 +84,47 @@ text-align: center;
 }
 
 .navbar-dark:hover .nav-link:hover {
-  color: gold;
+  color: #b5a060;
 }
 
+/* .nav-link {
+  background-color: #333;
+} */
 
-
-  /* .nav-link {
-    background-color: #333;
-    border-color: #545454; */
-/*
-  } */
-
-    .nav-link:hover {
-    margin: 0;
-    /* background-color: blue; */
+@media (max-width: 753px) {
+  .nav-link {
+    border-color: #545454;
+    border-style: solid;
+    border-width: 1px;
+      background-color: #333;
   }
 
-  /* OTHER */
-
-.container-fluid {
-  padding: 3% 5%;
+  .nav-link:hover {
+    margin: 0;
+    border-color: #b5a060;
+    background: linear-gradient(to bottom, #006ba1 0%, #0c387a 100%);
+    border-style: solid;
+    border-width: 1px;
+  }
 }
 
-.title {
-  background-size: cover;
-  background-color: #333;
-  color: #fff;
+/* /////////////////////OTHER */
+
+.main-A {
   padding-bottom: 1rem;
 }
 
-.main-A {
- padding-bottom: 1rem;
-}
-
 .main-B {
- background-color: #E8F0F2 ;
- color: #053742;
- padding-bottom: 1rem;
+  background-color: #E8F0F2;
+  color: #053742;
+  padding-bottom: 1rem;
 }
 
 .footer {
   font-family: 'Merriweather', serif;
   font-weight: 400;
   text-align: center;
-  background-color: #E8F0F2 ;
-  color: #053742;
-  padding: 5%;
+  background-color: #333;
+  color: #fff;
+  padding: 4rem 3rem 3rem;
 }
