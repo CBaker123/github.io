@@ -1,7 +1,7 @@
 /* blue : #006ba1
   text: #fff
-blue link box: background: linear-gradient(to bottom,#006ba1 0%,#0c387a 100%);
-gold link box: background: linear-gradient(to bottom,#dfca8a 0%,#c1ac6c 100%);
+blue gradient: background: linear-gradient(to bottom,#006ba1 0%,#0c387a 100%);
+gold gradient: background: linear-gradient(to bottom,#dfca8a 0%,#c1ac6c 100%);
 h2 text + link text non menu blue: #0c387a
 content text: gray; */
 
@@ -11,64 +11,86 @@ body {
   font-weight: 400;
   line-height: 1.45;
 }
-
 h1 {
+  font-family: 'Merriweather', serif;
   font-size: 2rem;
+  text-shadow: 2px 3px 3px #00031e;
 }
-
+h2 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  text-shadow: 2px 3px 3px #00031e;
+}
+h3 {
+  color: #043f70;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  padding: 2rem 0 2rem;
+}
+h6 {
+  color: #fff;
+  padding-top: 1.5rem;
+  text-decoration: underline;
+}
 hr {
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
+  color: #b5a060;
+  opacity: 1;
   margin: 0;
-  border-color: #b5a060;
-  ;
+  padding: 0;
+}
+p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: gray;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  text-decoration: none;
+  color: #b5a060;
 }
 
-
-/* //////////HEADER */
+/* -----HEADER START----- */
+.topBar {
+  padding: 1rem 1rem .5rem 2.5rem;
+  background: linear-gradient(to bottom, #006ba1 0%, #0c387a 100%);
+}
+.topBarLeft {
+  border-right: 1px solid #c1ac6c;;
+}
+.topBarRight {
+  border-left: 1px solid #c1ac6c;;
+}
+.phone {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
 .title {
   background-size: cover;
   background-color: #333;
   color: #fff;
-    background: linear-gradient(to bottom, #545454 0%, #333 100%);
+  background: linear-gradient(to bottom, #545454 0%, #333 100%);
 }
-
-.topBar {
-  font-family: "Raleway", sans-serif;
-  padding: 1rem;
-  font-size: 1.5rem;
-  background: linear-gradient(to bottom, #006ba1 0%, #0c387a 100%);
-  /* background-color: #006ba1; */
-}
-
-.container-fluid {
-  padding: 1% 5% 1%;
-}
-
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-top: .5rem;
-}
-
 .titleImage {
   width: 122px;
   padding-bottom: 1rem;
 }
-
-/* NAVBAR */
+  /* -----NAVBAR----- */
 .navbar-collapse {
   flex-grow: 0;
 }
-
 .navbar {
   display: flex;
   justify-content: center;
   align-self: center;
 }
-
 .navbar-dark .navbar-brand {
   font-family: "Helvetica", Verdana, Arial, sans-serif;
   font-size: 17px;
@@ -77,26 +99,19 @@ hr {
   color: #fff;
   justify-content: space-around;
 }
-
 .navbar-dark .navbar-nav .nav-link {
   padding: 15px 9px;
   color: #fff;
 }
-
 .navbar-dark:hover .nav-link:hover {
   color: #b5a060;
 }
-
-/* .nav-link {
-  background-color: #333;
-} */
-
 @media (max-width: 753px) {
   .nav-link {
     border-color: #545454;
     border-style: solid;
     border-width: 1px;
-      background-color: #333;
+    background-color: #333;
   }
 
   .nav-link:hover {
@@ -107,24 +122,119 @@ hr {
     border-width: 1px;
   }
 }
+  /* -----NAVBAR----- */
+/* -----HEADER END----- */
 
-/* /////////////////////OTHER */
-
-.main-A {
-  padding-bottom: 1rem;
-}
-
-.main-B {
-  background-color: #E8F0F2;
-  color: #053742;
-  padding-bottom: 1rem;
-}
-
+/* -----FOOTER START----- */
 .footer {
+  background-color: #333;
+}
+.footer p {
   font-family: 'Merriweather', serif;
   font-weight: 400;
-  text-align: center;
-  background-color: #333;
   color: #fff;
-  padding: 4rem 3rem 3rem;
+  margin: 0;
+}
+.footer hr {
+  margin: 1rem 0 1rem;
+}
+.footerInfo {
+    padding: 1.5rem 3rem 2rem;
+}
+.copyright {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.copyright p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  opacity: .7;
+  text-align: center;
+}
+/* -----FOOTER END----- */
+
+/* -----QUOTE BUTTON START----- */
+.quoteButton {
+  font-size: 20px;
+  font-weight: 600;
+  background: linear-gradient(to bottom, #c1ac6c 0%, #c3a341 100%);
+  width: 80%;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  border-style: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+    margin: 1rem 0 1rem;
+}
+
+.fas {
+  padding-right: 1rem;
+}
+.quoteButton:hover {
+  background: linear-gradient(to bottom, #dfca8a 0%, #c1ac6c 100%);
+  color: #0c387a;
+}
+/* -----QUOTE BUTTON END----- */
+
+/* -----INDEX PAGE START----- */
+.indexA {
+  background-image: url("../images/officers.jpg");
+  background-size: cover;
+  padding-bottom: 6rem;
+}
+.indexH2 {
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.indexQuoteBox {
+  padding-bottom: 6rem;
+}
+.indexB {
+  padding-bottom: 2rem;
+}
+.indexC {
+  background-image: url("../images/key.jpg");
+  background-size: cover;
+  text-align: right;
+  padding: 1% 5% 1%;
+}
+  /* -----TESTIMONIALS SECTION START----- */
+.testimonials-h3 {
+  color: #fff;
+}
+.testimonialsSection {
+  padding: 1rem 5rem 5rem;
+}
+.testimonialsImage {
+  border: 4px solid #fff;
+  border-radius: 4px;
+  padding: 2px;
+  max-width: 60%;
+  margin-bottom: 1rem;
+}
+.testimonialsSection p {
+  color: #fff;
+  font-weight: 400;
+  text-align: left;
+  padding-right: 6rem;
+}
+@media (max-width: 768px) {
+  .testimonialsSection p {
+    text-align: center;
+      padding-right: 0;
+  }
+}
+  /* -----TESTIMONIALS SECTION END----- */
+/* -----INDEX PAGE END----- */
+
+.container-fluid {
+  padding: 1% 5% 1%;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
