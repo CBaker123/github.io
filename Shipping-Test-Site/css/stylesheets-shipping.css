@@ -1,0 +1,27 @@
+a {
+  text-align: center;
+  font-weight: 200;
+  padding-left: 30px;
+}
+
+i {
+  color: #2D2424;
+  border-radius: 8px;
+  padding: 10px;
+  background: linear-gradient(#B85C38,#E0C097);
+  width: 150px;
+}
+
+.header {
+  padding: 1rem 0 1rem;
+  background-color: #2D2424;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: underline;
+  font-style: italic;
+  color: #B85C38;
+}
