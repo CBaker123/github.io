@@ -1,27 +1,35 @@
-a {
+.roundLinks {
   text-align: center;
-  font-weight: 200;
-  padding-left: 30px;
+  padding-bottom: 1rem;
 }
 
-i {
-  color: #2D2424;
-  border-radius: 8px;
-  padding: 10px;
-  background: linear-gradient(#B85C38,#E0C097);
-  width: 150px;
+.circle {
+  padding: 2rem;
 }
+
+.fas {
+  color:  #B85C38;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2D2424;
+  padding: 20px;
+  align-content: center;
+  }
 
 .header {
-  padding: 1rem 0 1rem;
-  background-color: #2D2424;
+
 }
 
 h1 {
-  color: white;
-  text-align: center;
-  padding: 20px;
+  text-align: left;
   text-decoration: underline;
   font-style: italic;
   color: #B85C38;
+}
+
+@media (min-width: 768px) {
+  .coName {
+    align-content: center;
+  }
 }
