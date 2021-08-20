@@ -1,35 +1,59 @@
+hr {
+  margin: 0;
+}
+/* -----START TOP CAUTION BANNER-----*/
+.topBanner {
+  background-color: #FFD100;
+}
+.cautionParagraph {
+  padding: .5rem 3rem .5rem;
+  margin-bottom: 0;
+  color: #2D2424;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+/* -----END TOP CAUTION BANNER-----*/
+
+/* -----START CIRCLE LINKS----- */
+.circlesRow {
+  justify-content: space-around;
+  padding: 1rem 8rem 0;
+}
 .roundLinks {
   text-align: center;
-  padding-bottom: 1rem;
+  padding: 1rem 0 1rem;
 }
-
 .circle {
   padding: 2rem;
 }
-
 .fas {
   color:  #B85C38;
+  font-size: 23px;
   border-radius: 50%;
   border-width: 2px;
   border-style: solid;
-  border-color: #2D2424;
-  padding: 20px;
-  align-content: center;
+  border-color: #64C9CF;
+  padding: 15px;
+  /* align-content: center; */
   }
+  /* -----END CIRCLE LINKS----- */
 
-.header {
-
-}
-
+/* -----START TITLE----- */
 h1 {
   text-align: left;
   text-decoration: underline;
   font-style: italic;
   color: #B85C38;
+  padding: 1.5rem;
 }
-
-@media (min-width: 768px) {
-  .coName {
-    align-content: center;
+.coName {
+   text-align: left;
+}
+@media (max-width: 768px) {
+  h1 {
+    text-align: center;
+    padding-top: .5rem;
   }
 }
+/* -----END TITLE----- */
