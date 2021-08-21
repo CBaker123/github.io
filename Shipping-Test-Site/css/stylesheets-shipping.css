@@ -1,6 +1,15 @@
 hr {
   margin: 0;
 }
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+  color: #B85C38;
+  padding: 1.5rem;
+  text-shadow: 1px 1px #242424;
+}
+
 /* -----START TOP CAUTION BANNER-----*/
 .topBanner {
   background-color: #FFD100;
@@ -38,40 +47,32 @@ hr {
   /* align-content: center; */
   }
   /* -----END CIRCLE LINKS----- */
-
 .header {
   background-color: blue;
 }
+/* -----END CIRCLE LINKS----- */
+
 /* -----START TITLE----- */
-h1 {
-  text-align: center;
-  text-decoration: underline;
-  font-style: italic;
-  color: #B85C38;
-  padding: 1.5rem;
-  text-shadow: 1px 1px #242424;
-}
-.coName {
-   text-align: left;
-}
 @media (max-width: 768px) {
-  h1 {
+  .h1Small {
     text-align: center;
     padding-top: .5rem;
   }
 }
-/* -----END TITLE----- */
-
-.searchBar {
-  justify-content: flex-end;
+.h1Col {
+  align-self: center;
 }
-
 .logoImg {
   width: 150px;
 }
-
 .logoText {
   text-align: center;
   padding: 0;
   margin: 0;
 }
+.navbar>.container, .navbar>.container-fluid,
+.navbar>.container-lg, .navbar>.container-md,
+.navbar>.container-sm, .navbar>.container-xl{
+  justify-content: space-around;
+}
+/* -----END TITLE----- */
