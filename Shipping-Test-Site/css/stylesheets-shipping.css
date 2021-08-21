@@ -38,11 +38,13 @@ h1 {
 }
 .fas {
   color:  #B85C38;
+  /* color: #333; */
   font-size: 23px;
   border-radius: 50%;
   border-width: 2px;
   border-style: solid;
-  border-color: #64C9CF;
+  /* border-color: #64C9CF; */
+  border-color: teal;
   padding: 15px;
   /* align-content: center; */
   }
@@ -74,5 +76,15 @@ h1 {
 .navbar>.container-lg, .navbar>.container-md,
 .navbar>.container-sm, .navbar>.container-xl{
   justify-content: space-around;
+  font-weight: 600;
 }
+
 /* -----END TITLE----- */
+
+.nav-item {
+  align-self:  center;
+}
+
+.dropdown-item {
+  align-self: flex-end;
+}
