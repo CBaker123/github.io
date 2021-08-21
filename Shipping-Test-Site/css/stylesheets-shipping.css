@@ -28,9 +28,14 @@ h1 {
 .circlesRow {
   justify-content: space-around;
   padding: 1rem 8rem 0;
+  background-image: url("../images/delivery-header.jpg");
+  background-size: cover;
+  background-position: right;
 }
 .roundLinks {
+  color:white;
   text-align: center;
+  font-weight: 600;
   padding: 1rem 0 1rem;
 }
 .circle {
@@ -38,7 +43,7 @@ h1 {
 }
 .fas {
   color:  #B85C38;
-  /* color: #333; */
+  /* color: #242424; */
   font-size: 23px;
   border-radius: 50%;
   border-width: 2px;
@@ -49,9 +54,6 @@ h1 {
   /* align-content: center; */
   }
   /* -----END CIRCLE LINKS----- */
-.header {
-  background-color: blue;
-}
 /* -----END CIRCLE LINKS----- */
 
 /* -----START TITLE----- */
