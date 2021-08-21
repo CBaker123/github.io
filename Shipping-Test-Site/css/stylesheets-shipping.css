@@ -44,11 +44,12 @@ hr {
 }
 /* -----START TITLE----- */
 h1 {
-  text-align: left;
+  text-align: center;
   text-decoration: underline;
   font-style: italic;
   color: #B85C38;
   padding: 1.5rem;
+  text-shadow: 1px 1px #242424;
 }
 .coName {
    text-align: left;
@@ -63,4 +64,14 @@ h1 {
 
 .searchBar {
   justify-content: flex-end;
+}
+
+.logoImg {
+  width: 150px;
+}
+
+.logoText {
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
