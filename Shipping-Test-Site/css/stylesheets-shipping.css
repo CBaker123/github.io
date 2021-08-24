@@ -1,6 +1,7 @@
 hr {
   margin: 0;
 }
+
 h1 {
   text-align: center;
   text-decoration: underline;
@@ -9,6 +10,12 @@ h1 {
   padding: 1.5rem;
   text-shadow: 1px 1px #242424;
 }
+
+h2 {
+  text-align: center;
+  color: #242424 ;
+}
+
 
 /* -----START TOP CAUTION BANNER-----*/
 .topBanner {
@@ -32,17 +39,20 @@ h1 {
   background-size: cover;
   background-position: right;
 }
+
 .roundLinks {
-  color:white;
+  color: white;
   text-align: center;
   font-weight: 600;
   padding: 1rem 0 1rem;
 }
+
 .circle {
   padding: 2rem;
 }
+
 .fas {
-  color:  #B85C38;
+  color: #B85C38;
   /* color: #242424; */
   font-size: 23px;
   border-radius: 50%;
@@ -52,10 +62,10 @@ h1 {
   border-color: teal;
   padding: 15px;
   /* align-content: center; */
-  }
-  /* -----END CIRCLE LINKS----- */
-/* -----END CIRCLE LINKS----- */
+}
 
+/* -----END CIRCLE LINKS----- */
+/* -----END CIRCLE LINKS----- */
 /* -----START TITLE----- */
 @media (max-width: 768px) {
   .h1Small {
@@ -63,30 +73,47 @@ h1 {
     padding-top: .5rem;
   }
 }
+
 .h1Col {
   align-self: center;
 }
+
 .logoImg {
   width: 150px;
 }
+
 .logoText {
   text-align: center;
   padding: 0;
   margin: 0;
 }
+
 .navbar>.container, .navbar>.container-fluid,
 .navbar>.container-lg, .navbar>.container-md,
-.navbar>.container-sm, .navbar>.container-xl{
+.navbar>.container-sm, .navbar>.container-xl {
   justify-content: space-around;
   font-weight: 600;
 }
 
 /* -----END TITLE----- */
-
 .nav-item {
-  align-self:  center;
+  align-self: center;
 }
 
 .dropdown-item {
   align-self: flex-end;
 }
+
+/* -----START TRACKING SECTION----- */
+.trackingBar {
+  padding: 1rem;
+}
+.trackingPart {
+  justify-content: center;
+}
+.TrackingSection {
+  padding: 3rem;
+  background: linear-gradient( #ffffff, #D3D3D3);
+}
+
+/* -----END TRACKING SECTION----- */
