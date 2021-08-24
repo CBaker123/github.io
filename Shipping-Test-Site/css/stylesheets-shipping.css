@@ -1,5 +1,11 @@
+body {
+  font-family: "Tahoma", sans-serif;}
+
 hr {
   margin: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
 }
 
 h1 {
@@ -105,15 +111,31 @@ h2 {
 }
 
 /* -----START TRACKING SECTION----- */
-.trackingBar {
+.cardTitle {
+  padding: 1rem 1rem 0;
+}
+.cardTitle p {
+  margin-bottom: .2rem;
+}
+.cardSearchBar {
+  padding-top: .5rem;
+}
+.cardButton {
   padding: 1rem;
 }
-.trackingPart {
-  justify-content: center;
-}
 .TrackingSection {
-  padding: 3rem;
-  background: linear-gradient( #ffffff, #D3D3D3);
+  padding: 1.5rem 2rem;
+  background-color: #D3D3D3;
+}
+
+.shadowedCard {
+  background-color: #ffffff;
+  padding-bottom: 1rem;
+  box-shadow: 1px 2px 1px gray;
+}
+
+.btn-success {
+  border-radius: 30px;
 }
 
 /* -----END TRACKING SECTION----- */
