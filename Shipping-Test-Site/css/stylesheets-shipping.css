@@ -4,13 +4,6 @@ body {
 
 }
 
-hr {
-  margin: 0;
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-}
-
 h1 {
   text-align: center;
   text-decoration: underline;
@@ -21,22 +14,39 @@ h1 {
 }
 
 h2 {
-  text-align: center;
   color: #242424;
+  text-align: left;
+  font-size: 1.86em;
+  font-weight: bold;
+  padding: 1.5rem 0 1.5rem;
+
+}
+
+h6 {
+  font-weight: bold;
 }
 
 a {
   color: #426DA9;
 }
-.row {
 
+hr {
+  margin: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.row {
   margin-right: 0;
 }
-/* -----START TOP CAUTION BANNER-----*/
+/* ------------------------ */
+/* index.html*/
+
+/* -----topBanner*/
 .topBanner {
   background-color: #FFD100;
 }
-
 .cautionParagraph {
   padding: .5rem 3rem .5rem;
   margin-bottom: 0;
@@ -46,30 +56,25 @@ a {
   text-align: center;
 }
 
-/* -----END TOP CAUTION BANNER-----*/
-/* -----START CIRCLE LINKS----- */
-.circlesRow {
-  justify-content: space-around;
-  padding: 1rem 8rem 0;
-
-}
+/* ----circlesMenu----- */
 .circlesMenu{
   background-image: url("../images/delivery-header.jpg");
   background-size: cover;
   background-position: right;
 }
-
+.circlesRow {
+  justify-content: space-around;
+  padding: 1rem 8rem 0;
+}
 .roundLinks {
   color: white;
   text-align: center;
   font-weight: 600;
   padding: 1rem 0 1rem;
 }
-
 .circle {
   padding: 2rem;
 }
-
 .fas {
   color: #B85C38;
   font-size: 23px;
@@ -80,50 +85,43 @@ a {
   padding: 15px;
 }
 
-/* -----END CIRCLE LINKS----- */
-/* -----START TITLE----- */
+/* -----titleSection */
 @media (max-width: 768px) {
   .h1Small {
     text-align: center;
     padding-top: .5rem;
   }
 }
-
 .h1Col {
   align-self: center;
 }
-
 .logoImg {
   width: 150px;
 }
-
 .logoText {
   text-align: center;
   padding: 0;
   margin: 0;
 }
-
 .navbar>.container, .navbar>.container-fluid,
 .navbar>.container-lg, .navbar>.container-md,
 .navbar>.container-sm, .navbar>.container-xl {
   justify-content: space-around;
   font-weight: 600;
 }
-
-/* -----END TITLE----- */
 .nav-item {
   align-self: center;
 }
-
 .dropdown-item {
   align-self: flex-end;
 }
 
+/* -----indexReturnSection */
 .indexImg {
   width: 100%;
 }
 
-/* -----START TRACKING SECTION----- */
+/* -----trackingSection */
 .cardTitle p {
   margin-bottom: .2rem;
 }
@@ -136,7 +134,7 @@ a {
   padding: 1rem;
 }
 
-.TrackingSection {
+.trackingSection {
   padding: 1.5rem 2rem;
   background-color: #D3D3D3;
 }
@@ -157,12 +155,4 @@ a {
 .indexReturnSection {
   padding: 1rem 3.5rem;
     background-color: #e8e8e6;
-}
-
-.indexH2 {
-  text-align: left;
-  font-size: 1.86em;
-  font-weight: bold;
-  color: #2D2424;;
-  padding: 1.5rem 0;
 }
