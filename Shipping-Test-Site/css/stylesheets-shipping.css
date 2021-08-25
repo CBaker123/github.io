@@ -1,5 +1,8 @@
 body {
-  font-family: "Tahoma", sans-serif;}
+  font-family: "Tahoma", sans-serif;
+  font-size: 14px;
+
+}
 
 hr {
   margin: 0;
@@ -19,14 +22,21 @@ h1 {
 
 h2 {
   text-align: center;
-  color: #242424 ;
+  color: #242424;
 }
 
+a {
+  color: #426DA9;
+}
+.row {
 
+  margin-right: 0;
+}
 /* -----START TOP CAUTION BANNER-----*/
 .topBanner {
   background-color: #FFD100;
 }
+
 .cautionParagraph {
   padding: .5rem 3rem .5rem;
   margin-bottom: 0;
@@ -35,12 +45,15 @@ h2 {
   font-weight: 600;
   text-align: center;
 }
-/* -----END TOP CAUTION BANNER-----*/
 
+/* -----END TOP CAUTION BANNER-----*/
 /* -----START CIRCLE LINKS----- */
 .circlesRow {
   justify-content: space-around;
   padding: 1rem 8rem 0;
+
+}
+.circlesMenu{
   background-image: url("../images/delivery-header.jpg");
   background-size: cover;
   background-position: right;
@@ -59,18 +72,14 @@ h2 {
 
 .fas {
   color: #B85C38;
-  /* color: #242424; */
   font-size: 23px;
   border-radius: 50%;
   border-width: 2px;
   border-style: solid;
-  /* border-color: #64C9CF; */
   border-color: teal;
   padding: 15px;
-  /* align-content: center; */
 }
 
-/* -----END CIRCLE LINKS----- */
 /* -----END CIRCLE LINKS----- */
 /* -----START TITLE----- */
 @media (max-width: 768px) {
@@ -110,19 +119,23 @@ h2 {
   align-self: flex-end;
 }
 
-/* -----START TRACKING SECTION----- */
-.cardTitle {
-  padding: 1rem 1rem 0;
+.indexImg {
+  width: 100%;
 }
+
+/* -----START TRACKING SECTION----- */
 .cardTitle p {
   margin-bottom: .2rem;
 }
+
 .cardSearchBar {
   padding-top: .5rem;
 }
+
 .cardButton {
   padding: 1rem;
 }
+
 .TrackingSection {
   padding: 1.5rem 2rem;
   background-color: #D3D3D3;
@@ -130,12 +143,26 @@ h2 {
 
 .shadowedCard {
   background-color: #ffffff;
-  padding-bottom: 1rem;
+  padding: 1rem 1rem 1rem;
   box-shadow: 1px 2px 1px gray;
 }
 
 .btn-success {
   border-radius: 30px;
+  background: #00857D;
 }
 
 /* -----END TRACKING SECTION----- */
+
+.indexReturnSection {
+  padding: 1rem 3.5rem;
+    background-color: #e8e8e6;
+}
+
+.indexH2 {
+  text-align: left;
+  font-size: 1.86em;
+  font-weight: bold;
+  color: #2D2424;;
+  padding: 1.5rem 0;
+}
