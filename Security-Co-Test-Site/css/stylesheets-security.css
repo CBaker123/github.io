@@ -27,6 +27,18 @@ h3 {
   font-weight: 600;
   padding: 2rem 0 2rem;
 }
+h4 {
+  color: gray;
+  font-weight: 600;
+}
+
+h5 {
+  color: gray;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+
 h6 {
   color: #fff;
   padding-top: 1.5rem;
@@ -237,4 +249,42 @@ a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-right: 0;
+}
+
+/* quote----- */
+.goldBar {
+  padding: 3rem;
+  text-align: center;
+  background: linear-gradient(to bottom,#ebdaa4 0%,#d2ad32 100%);
+}
+
+.goldBar>h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.quoteBlock1 {
+  padding: 3rem;
+  text-align: center;
+}
+.quoteBlock2 {
+  padding: 3rem;
+  text-align: left;
+}
+.badgeOnQuote {
+  width: 150px;
+}
+.quoteBlock1>p {
+  font-style: italic;
+}
+.quoteBlock1 a {
+  color: #dfca8a;
+}
+.quoteBlock1 a:hover {
+  color: #c1ac6c;
+}
+.quoteBlock1paragraph>p {
+  font-style: normal;
+  margin-bottom: 0;
 }
