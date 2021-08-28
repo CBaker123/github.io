@@ -75,21 +75,44 @@
           <h4>Black Mountain Security</h4>
           <p>Nationwide Security Services</p>
           <div class="quoteBlock1paragraph">
-          <p>Tollfree: 1-800-555-5555</p>
-          <p>Email: <a href="mailto:Security@blackmountainsecurity.com?subject=quote">Security@blackmountainsecurity.com</a></p>
-          <h4 class="applicationHeader">Employment Application</h4>
-          <p>We encourage all applicants to fill out the online form before calling.</p>
+            <p>Tollfree: 1-800-555-5555</p>
+            <p>Email: <a href="mailto:Security@blackmountainsecurity.com?subject=quote">Security@blackmountainsecurity.com</a></p>
+            <h4 class="applicationHeader">Employment Application</h4>
+            <p>We encourage all applicants to fill out the online form before calling.</p>
             <a href="employment">Apply</a>
           </div>
         </div>
         <div class="col-md-6 quoteBlock2">
-          <h3>Security Services Quote</h3>
-          <div class="">
-            <!-- FORM -->
-          </div>
+          <h3 class="centered">Security Services Quote</h3>
+          <form class="myForm" action="index.html" method="post" novalidate>
+            <div class="container">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="John">
+                <label for="floatingInput">First</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Smith">
+                <label for="floatingInput">Last</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="tel" class="form-control" id="floatingInput" placeholder="(555)555-5555">
+                <label for="floatingInput">Phone Number</label>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Type of Service Requested</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button class="btn btn-success myButton" type="submit">Request Quote</button>
+          </form>
         </div>
       </div>
     </div>
+    </div>
+
   </section>
   <hr>
   <section class="footer">
