@@ -211,11 +211,12 @@ a:hover {
   padding-bottom: 6rem;
 }
 
-.indexH2 {
+.imageH2 {
   font-size: 40px;
   font-weight: 700;
   padding-top: 6rem;
   padding-bottom: 6rem;
+  text-align: center;
 }
 
 .indexQuoteBox {
@@ -351,4 +352,10 @@ a:hover {
 .myButton:hover {
   background: linear-gradient(to bottom, #dfca8a 0%, #c1ac6c 100%);
     color: #fff;
+}
+
+.blogHeader {
+  background-image: url("../images/security-guard.jpg");
+  background-size: cover;
+  background-position: center;
 }
