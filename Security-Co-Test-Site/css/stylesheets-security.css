@@ -353,10 +353,10 @@ a:hover {
     background: linear-gradient(to bottom, #ebdaa4 0%, #d2ad32 100%);
     font-weight: 400;
     color: #0c387a;
-    /* border-style: none;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin: 1rem 0 1rem; */
+    font-size: 20px;
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    margin: 1rem 0 1rem;
   }
 
 .myButton:hover {
@@ -380,4 +380,8 @@ a:hover {
 .blogTitle {
   margin-bottom: 0;
   padding-bottom: 1rem;
+}
+
+.empApp {
+  padding-top: 0;
 }
