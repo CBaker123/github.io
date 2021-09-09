@@ -87,24 +87,24 @@
           <form class="myForm" action="quoteReply.html" method="post" validate>
             <div class="container">
               <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="firstName" placeholder="John">
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="John">
                 <label for="firsName">First</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="lastName" placeholder="Smith">
+                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Smith">
                 <label for="lastName">Last</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
                 <label for="email">Email address</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="tel" class="form-control" id="phoneNumber" placeholder="(555)555-5555">
+                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="(555)555-5555">
                 <label for="phoneNumber">Phone Number</label>
               </div>
               <div class="mb-3">
                 <label for="requestServiceType" class="form-label">Type of Service Requested</label>
-                <textarea class="form-control" id="requestServiceType" rows="3"></textarea>
+                <textarea class="form-control" id="requestServiceType" name="requestServiceType" rows="3"></textarea>
               </div>
               <button class="btn btn-success myButton" id="myQuoteButton" type="submit">Request Quote</button>
           </form>
