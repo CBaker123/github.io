@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="images/security badge.png" />
+      <script type="text/javascript" src="javascript.js"></script>
 </head>
 
 <body>
@@ -71,7 +72,7 @@
     <!-- <div class="col-md-6 quoteBlock2"> -->
     <!-- <h3 class="centered">Employment Application</h3> -->
     <div class="row">
-      <form class="myForm" action="index.html" method="post" validate>
+      <form class="myForm" id="formEmploy" onsubmit="return false;" method="post" validate>
         <div class="row">
           <div class="col-md-6 quoteBlock2">
             <h3>Personal Information</h3>
@@ -114,7 +115,7 @@
               <label for="resumeFile" class="form-label">Resume</label>
               <input class="form-control" type="file" id="resumeFile">
             </div>
-            <button class="btn btn-success myButton" id="myApplicationButton" type="submit">Submit Application</button>
+            <button class="btn btn-success myButton" id="myApplicationButton" type="submit" onclick="function2();">Submit Application</button>
 
           </div>
       </form>
