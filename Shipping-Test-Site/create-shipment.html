@@ -10,7 +10,7 @@
 
 <body>
 
-<section class="title">
+  <section class="title">
     <div class="navigation-bar">
       <div class="container-fluid">
         <div class="row bigRow">
@@ -80,15 +80,143 @@
               </div>
             </nav>
           </div>
-
         </div>
       </div>
     </div>
   </section>
+
   <hr>
-<section>
-  <p>WHERE</p>
-  <p>Hello.  Where are you shipping from?</p>
+<div class="spacer">
+
+</div>
+  <form>
+    <section class="myForm">
+
+      <div class="mainFormSection">
+
+        <div class="row bigRow formsRow">
+          <h5>Recipient:</h5>
+          <div class="form-group col-md-6 formItem">
+            <label for="inputName3">First Name</label>
+            <input type="password" class="form-control" id="inputName3" placeholder="John">
+          </div>
+
+        <div class="form-group col-md-6 formItem">
+          <label for="inputName4">Last Name</label>
+          <input type="password" class="form-control" id="inputName3" placeholder="Smith">
+        </div>
+      </div>
+
+        <div class="row bigRow formsRow">
+          <div class="form-group formItem">
+            <label for="inputAddress3">Address</label>
+            <input type="text" class="form-control" id="inputAddress3" placeholder="1234 Main St">
+          </div>
+          <div class="form-group formItem">
+            <label for="inputAddress4">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress4" placeholder="Apartment, studio, or floor">
+          </div>
+        </div>
+
+        <div class="row bigRow formsRow">
+          <div class="form-group col-md-6  formItem">
+            <label for="inputCity3">City</label>
+            <input type="text" class="form-control" id="inputCity3">
+          </div>
+          <div class="form-group col-md-4 formItem">
+            <label for="inputState3">State</label>
+            <select id="inputState3" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2 formItem">
+            <label for="inputZip3">Zip</label>
+            <input type="text" class="form-control" id="inputZip3">
+          </div>
+        </div>
+        <hr class="partition">
+        <div class="row bigRow formsRow">
+          <h5>Shipper:</h5>
+          <div class="form-group col-md-6 formItem">
+            <label for="inputName">Full Name</label>
+            <input type="password" class="form-control" id="inputName" placeholder="John Smith">
+          </div>
+          <div class="form-group col-md-6 formItem">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+          </div>
+        </div>
+
+        <div class="row bigRow formsRow">
+          <div class="form-group formItem">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="form-group formItem">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+        </div>
+
+        <div class="row bigRow formsRow">
+          <div class="form-group col-md-6  formItem">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4 formItem">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2 formItem">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+
+        <div class="row bigRow formsRow">
+          <div class="form-group">
+            <div class="form-check formItem">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Email Shipping Updates
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Confirm</button>
+        </div>
+
+      </div>
+
+      <!-- <div class="domesticIntRadios">
+        <div class="row bigRow formsRow">
+          <div class="col-md-6 radioButton">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+              <label class="form-check-label" for="flexRadioDefault1">
+                Domestic
+              </label>
+            </div>
+          </div>
+          <div class="col-md-6 radioButton">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label" for="flexRadioDefault2">
+                International
+              </label>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    </section>
+  </form>
+
+
+
   <p>Create Form with country*, name*, contact name, address*, email*, phone*, ext, send updates checkbox </p>
   <p>Use a different return address? yes no toggle</p>
   <p>continue button, cancel shipment link</p>
@@ -102,7 +230,7 @@
   <p>PAYMENT</p>
   <p></p>
   <p>REVIEW</p>
-</section>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/421fbecc74.js" crossorigin="anonymous"></script>

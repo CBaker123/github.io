@@ -47,6 +47,9 @@ hr {
   border-color: black;
 }
 
+.centered {
+  text-align: center;
+}
 .shadowedCard {
   background-color: #ffffff;
   padding: 1rem 1rem 1rem;
@@ -254,4 +257,37 @@ li.footerListItem {
 .indexReturnSection {
   padding: 1rem 3.5rem;
     background-color: #e8e8e6;
+}
+
+/* .domesticIntRadios {
+  padding: 2rem 1rem 2rem;
+} */
+
+.formsRow {
+  justify-content: center;
+  padding: .5rem 3rem .5rem;
+}
+
+.radioButton {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.formItem {
+  padding: .5rem 2rem;
+}
+
+.partition {
+  margin: 2rem;
+  background-color: #ffffff;
+  border-color: black;
+  border-style: dotted;
+  border-width: 10px;
+  /* width: 10%; */
+  border-top-style: hidden;
+}
+
+.spacer{
+  margin-top: 1rem;
 }
