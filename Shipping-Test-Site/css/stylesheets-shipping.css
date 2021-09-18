@@ -19,7 +19,6 @@ h2 {
   font-size: 1.86em;
   font-weight: bold;
   padding: 1.5rem 0 1.5rem;
-
 }
 
 h3 {
@@ -29,7 +28,7 @@ h3 {
 
 h4 {
   font-size: 1.2rem;
-    font-weight: bold;
+  font-weight: bold;
 }
 
 h6 {
@@ -37,7 +36,11 @@ h6 {
 }
 
 a {
-  color: #426DA9;
+  color: #00857D;
+}
+
+a:hover {
+  color: #B85C38;
 }
 
 hr {
@@ -50,6 +53,7 @@ hr {
 .centered {
   text-align: center;
 }
+
 .shadowedCard {
   background-color: #ffffff;
   padding: 1rem 1rem 1rem;
@@ -59,6 +63,10 @@ hr {
 .btn-success {
   border-radius: 30px;
   background: #00857D;
+
+}
+.btn-success:hover {
+    /* background: #B85C38; */
 }
 
 .row {
@@ -71,38 +79,47 @@ hr {
   display: flex;
   justify-content: flex-end;
 }
+
 .h1Col2 {
   align-self: center;
   display: flex;
   justify-content: flex-start;
 }
+
 @media (max-width:768px) {
   .h1Col1 {
     justify-content: space-around;
   }
+
   .h1Col2 {
     justify-content: space-around;
   }
 }
+
 .bigRow {
-    padding: 0 4rem;
+  padding: 0 4rem;
 }
+
 .navbarCol {
   align-self: center;
   display: flex;
   justify-content: center;
 }
+
 .logoImg {
   width: 150px;
 }
+
 .navbar-brand {
-  align-items:center;
+  align-items: center;
 }
+
 .logoText {
   text-align: center;
   padding: 0;
   margin: 0;
 }
+
 .navbar>.container, .navbar>.container-fluid,
 .navbar>.container-lg, .navbar>.container-md,
 .navbar>.container-sm, .navbar>.container-xl {
@@ -110,9 +127,11 @@ hr {
   justify-content: space-around;
   font-weight: 600;
 }
+
 .nav-item {
   align-self: center;
 }
+
 .dropdown-item {
   align-self: flex-end;
 }
@@ -121,45 +140,53 @@ hr {
 .whiteSpaceSection {
   padding: 1rem;
 }
+
 footer {
   padding: 1rem 3rem 1rem;
-  background-color: #e8e8e6;
 }
+
 .footerContent {
   text-align: center;
 }
+
 .foot {
   padding: 1rem 3rem 1rem;
 }
+
 .copyright {
   text-align: center;
   padding-top: 1rem;
 }
+
 .whiteSpaceSection {
   padding: 1rem;
 }
+
 .footerList {
   padding-top: .25rem;
   list-style: none;
 }
+
 ul.footerList {
   padding-left: 0;
 }
+
 .footerListItem>a {
   color: #333333;
   text-decoration: none;
 }
+
 li.footerListItem {
   margin-top: .75rem;
 }
 
 /* ------------------------ */
 /* index.html*/
-
 /* -----topBanner*/
 .topBanner {
   background-color: #FFD100;
 }
+
 .cautionParagraph {
   padding: .5rem 3rem .5rem;
   margin-bottom: 0;
@@ -170,25 +197,29 @@ li.footerListItem {
 }
 
 /* ----circlesMenu----- */
-.circlesMenu{
+.circlesMenu {
   background-image: url("../images/delivery-header2.jpg");
   background-size: cover;
   background-position: right;
 }
+
 .circlesRow {
   justify-content: space-around;
   padding: 1rem 8rem 0;
 }
+
 .roundLinks {
   color: white;
   text-align: center;
   font-weight: 600;
   padding: 1rem 0 1rem;
 }
+
 .circle {
   padding: 2rem;
 }
-.circleIcon  {
+
+.circleIcon {
   color: #B85C38;
   font-size: 23px;
   border-radius: 50%;
@@ -205,14 +236,16 @@ li.footerListItem {
   display: flex;
   justify-content: space-around;
 }
+
 .indexCardsBox {
   background-color: #e8e8e6;
   margin: 1rem 0;
-
 }
+
 .cardImg {
   width: 100%;
 }
+
 .cardsContainer {
   padding-left: .5rem;
 }
@@ -245,23 +278,20 @@ li.footerListItem {
   padding: 1rem;
 }
 
-.trackingSection {
+.toolsSection {
   padding: 1.5rem 2rem;
-  background-color: #D3D3D3;
+  background-color:  #e8e8e6;
 }
 
-
+.centeredContent {
+  justify-content: center;
+}
 
 /* -----END TRACKING SECTION----- */
-
 .indexReturnSection {
   padding: 1rem 3.5rem;
-    background-color: #e8e8e6;
+  background-color: #e8e8e6;
 }
-
-/* .domesticIntRadios {
-  padding: 2rem 1rem 2rem;
-} */
 
 .formsRow {
   justify-content: center;
@@ -269,9 +299,9 @@ li.footerListItem {
 }
 
 .radioButton {
-  padding-top: 1rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .formItem {
@@ -284,10 +314,23 @@ li.footerListItem {
   border-color: black;
   border-style: dotted;
   border-width: 10px;
-  /* width: 10%; */
   border-top-style: hidden;
 }
 
-.spacer{
+.spacer {
   margin-top: 1rem;
+}
+
+.loginCol {
+  display: flex;
+  align-items: center;
+}
+
+.quickContent {
+  padding: 1rem 0 0;
+}
+
+.myForm {
+  justify-content: space-around;
+  padding: 1rem 0;
 }
