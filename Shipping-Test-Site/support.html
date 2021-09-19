@@ -129,19 +129,125 @@
   </section>
   <hr />
 
-  <section>
-    <div class="row bigRow">
-      <div class="col-md-8 quickContent">
-        <p>customer support page</p>
-        <p>phone number and chat and email box</p>
-        <a class="btn btn-success" href="login-page.html">Login</a>
+  <section class="toolsSection">
+    <div class="container">
+      <div class="row height d-flex centeredContent">
+        <div class="col-10">
+          <div class="container shadowedCard">
+            <div class="row height d-flex  trackingPart">
+              <div class="col-12 cardTitle">
+                <h4 class="quickContent">Contact Us</h4>
+              </div>
+              <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <div class="row">
+                  <div class="form-group col-md-6 formItem">
+                    <label for="name" class="">Name</label>
+                    <input type="text" id="name" name="name" class="form-control">
+                  </div>
+
+                  <div class="form-group col-md-6 formItem">
+                    <label for="email" class="">Email</label>
+
+                    <input type="text" id="email" name="email" class="form-control">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-12 formItem">
+                    <label for="subject" class="">Subject</label>
+                    <input type="text" id="subject" name="subject" class="form-control">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-12 formItem">
+                    <label for="message">Message</label>
+                    <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea"></textarea>
+                  </div>
+                  <div class="col-2 cardButton">
+                    <button class="btn btn-success" role="button">Login</button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="toolsSection">
+    <div class="container">
+      <div class="row height d-flex centeredContent">
+        <div class="col-10">
+          <div class="container shadowedCard">
+            <div class="row height d-flex  trackingPart">
+
+              <div class="col-12 cardTitle">
+
+                <h4 class="quickContent">Log In</h4>
+              </div>
+
+              <form id="contact-form" name="login-form" action="mail.php" method="POST">
+                <div class="form-group col-md-12 formItem">
+                  <label for="Username">Username</label>
+                  <input type="text" class="form-control" id="Username" placeholder="Username">
+                </div>
+
+                <div class="form-group col-md-12 formItem">
+                  <label for="Password">Password</label>
+                  <input type="password" class="form-control" id="Password" placeholder="Password">
+                </div>
+
+                <div class="col-2 cardButton">
+                  <button class="btn btn-success" role="button">Login</button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="toolsSection">
+    <div class="container">
+      <div class="row height d-flex centeredContent">
+        <div class="col-10">
+          <div class="container shadowedCard">
+            <div class="row height d-flex  trackingPart">
+
+              <div class="col-12 cardTitle">
+                <h4 class="quickContent">Information</h4>
+                <div class="centered">
+                  <h6>Address:</h6>
+                  <p>9876 Industrial Ave.</p>
+                  <p>Shipingsville, Tennessee</p>
+                  <p>12345</p>
+                </div>
+                <div class="centered topBottom">
+                  <h6>Phone:</h6>
+                  <a href="tel:18885555555">1(888)-555-5555</a>
+                </div>
+
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <hr />
-  <section class="whiteSpaceSection"></section>
-  <hr />
+
+
 
   <footer>
     <div class="row footerContent">
@@ -179,6 +285,6 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/421fbecc74.js" crossorigin="anonymous"></script>
-  </body>
+</body>
 
-  </html>
+</html>

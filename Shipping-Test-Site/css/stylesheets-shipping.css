@@ -65,9 +65,9 @@ hr {
   background: #00857D;
 
 }
-.btn-success:hover {
-    /* background: #B85C38; */
-}
+/* .btn-success:hover {
+     background: #B85C38;
+} */
 
 .row {
   margin-right: 0;
@@ -332,5 +332,9 @@ li.footerListItem {
 
 .myForm {
   justify-content: space-around;
+  padding: 1rem 0;
+}
+
+.topBottom {
   padding: 1rem 0;
 }
