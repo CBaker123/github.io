@@ -196,6 +196,22 @@ li.footerListItem {
   text-align: center;
 }
 
+/* -----findService */
+.findServiceHead {
+  background-image: url("../images/docks.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 200px;
+}
+
+.imgSmall {
+  padding: 1rem 0;
+}
+
+.contactLink {
+  padding: 1rem 0; 
+}
+
 /* ----circlesMenu----- */
 .circlesMenu {
   background-image: url("../images/delivery-header2.jpg");
