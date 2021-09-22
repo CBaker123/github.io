@@ -216,6 +216,34 @@ li.footerListItem {
   color: #00857D;
 }
 
+.internationalHead {
+  background-image: url("../images/docks3.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 200px;
+}
+
+.personalShippingHead {
+  background-image: url("../images/personalShipping3.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 200px;
+}
+
+.smallBusinessHead {
+  background-image: url("../images/smallBusiness3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+.mapHead {
+  background-image: url("../images/mapImage.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
 /* ----circlesMenu----- */
 .circlesMenu {
   background-image: url("../images/delivery-header2.jpg");
