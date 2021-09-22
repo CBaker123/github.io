@@ -209,7 +209,11 @@ li.footerListItem {
 }
 
 .contactLink {
-  padding: 1rem 0; 
+  padding: 1rem 0;
+}
+
+.coloredGreen {
+  color: #00857D;
 }
 
 /* ----circlesMenu----- */
