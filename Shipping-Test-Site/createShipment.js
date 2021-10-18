@@ -72,5 +72,6 @@ const createShipmentStage3 = () => {
 }
 
 const createShipmentStage4 = () => {
-  //finish this to take to this is only a demo page
+  window.alert("This is only a demo!!")
+  document.location = 'create-Shipment.html';
 }
