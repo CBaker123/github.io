@@ -386,3 +386,7 @@ li.footerListItem {
 .topBottom {
   padding: 1rem 0;
 }
+
+.topMargin {
+  margin-top: 1rem;
+}

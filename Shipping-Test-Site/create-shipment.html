@@ -8,6 +8,8 @@
   <link rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/stylesheets-shipping.css" />
   <link rel="shortcut icon" href="images/wing.png" />
+  <script src="javascript.js"></script>
+
 
 </head>
 
@@ -120,243 +122,336 @@
   </section>
   <hr />
 
-  </div>
-  <form>
-    <section class="toolsSection">
-      <section class="myForm row height d-flex">
-        <div class="mainFormSection col-10">
-          <div class="container shadowedCard">
-            <div class="row bigRow formsRow">
-              <h2 class="coloredGreen centered">Create Shipment</h2>
-              <h5>Recipient:</h5>
-              <div class="form-group col-md-6 formItem">
-                <label for="inputName3">First Name</label>
-                <input type="text" class="form-control" id="inputName3" placeholder="John">
+  <div id="data1">
+    <form onsubmit="return false">
+      <section class="toolsSection">
+        <section class="myForm row height d-flex">
+          <div class="mainFormSection col-10">
+            <div class="container shadowedCard">
+              <div class="row bigRow formsRow">
+                <h2 class="coloredGreen centered">Create Shipment</h2>
+                <h5>Recipient:</h5>
+                <div class="form-group col-md-6 formItem">
+                  <label for="recipientInputFirstName">First Name</label>
+                  <input type="text" class="form-control" id="recipientInputFirstName" placeholder="John">
+                </div>
+                <div class="form-group col-md-6 formItem">
+                  <label for="recipientInputLastName">Last Name</label>
+                  <input type="text" class="form-control" id="recipientInputLastName" placeholder="Smith">
+                </div>
               </div>
-
-              <div class="form-group col-md-6 formItem">
-                <label for="inputName4">Last Name</label>
-                <input type="text" class="form-control" id="inputName3" placeholder="Smith">
+              <div class="row bigRow formsRow">
+                <div class="form-group formItem">
+                  <label for="recipientInputAddress">Address</label>
+                  <input type="text" class="form-control" id="recipientInputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group formItem">
+                  <label for="recipientInputAddress2">Address 2</label>
+                  <input type="text" class="form-control" id="recipientInputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
               </div>
-
-            </div>
-
-            <div class="row bigRow formsRow">
-              <div class="form-group formItem">
-                <label for="inputAddress3">Address</label>
-                <input type="text" class="form-control" id="inputAddress3" placeholder="1234 Main St">
-              </div>
-              <div class="form-group formItem">
-                <label for="inputAddress4">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress4" placeholder="Apartment, studio, or floor">
-              </div>
-            </div>
-
-            <div class="row bigRow formsRow">
-              <div class="form-group col-md-6  formItem">
-                <label for="inputCity3">City</label>
-                <input type="text" class="form-control" id="inputCity3">
-              </div>
-
-              <div class="form-group col-md-4 formItem">
-                <label for="inputState3">State</label>
-                <select id="inputState3" class="form-control">
-                  <option selected>Choose...</option>
-                  <option value="AL">Alabama</option>
-                  <option value="AK">Alaska</option>
-                  <option value="AZ">Arizona</option>
-                  <option value="AR">Arkansas</option>
-                  <option value="CA">California</option>
-                  <option value="CO">Colorado</option>
-                  <option value="CT">Connecticut</option>
-                  <option value="DE">Delaware</option>
-                  <option value="DC">District Of Columbia</option>
-                  <option value="FL">Florida</option>
-                  <option value="GA">Georgia</option>
-                  <option value="HI">Hawaii</option>
-                  <option value="ID">Idaho</option>
-                  <option value="IL">Illinois</option>
-                  <option value="IN">Indiana</option>
-                  <option value="IA">Iowa</option>
-                  <option value="KS">Kansas</option>
-                  <option value="KY">Kentucky</option>
-                  <option value="LA">Louisiana</option>
-                  <option value="ME">Maine</option>
-                  <option value="MD">Maryland</option>
-                  <option value="MA">Massachusetts</option>
-                  <option value="MI">Michigan</option>
-                  <option value="MN">Minnesota</option>
-                  <option value="MS">Mississippi</option>
-                  <option value="MO">Missouri</option>
-                  <option value="MT">Montana</option>
-                  <option value="NE">Nebraska</option>
-                  <option value="NV">Nevada</option>
-                  <option value="NH">New Hampshire</option>
-                  <option value="NJ">New Jersey</option>
-                  <option value="NM">New Mexico</option>
-                  <option value="NY">New York</option>
-                  <option value="NC">North Carolina</option>
-                  <option value="ND">North Dakota</option>
-                  <option value="OH">Ohio</option>
-                  <option value="OK">Oklahoma</option>
-                  <option value="OR">Oregon</option>
-                  <option value="PA">Pennsylvania</option>
-                  <option value="RI">Rhode Island</option>
-                  <option value="SC">South Carolina</option>
-                  <option value="SD">South Dakota</option>
-                  <option value="TN">Tennessee</option>
-                  <option value="TX">Texas</option>
-                  <option value="UT">Utah</option>
-                  <option value="VT">Vermont</option>
-                  <option value="VA">Virginia</option>
-                  <option value="WA">Washington</option>
-                  <option value="WV">West Virginia</option>
-                  <option value="WI">Wisconsin</option>
-                  <option value="WY">Wyoming</option>
-                </select>
-              </div>
-              <div class="form-group col-md-2 formItem">
-                <label for="inputZip3">Zip</label>
-                <input type="text" class="form-control" id="inputZip3">
+              <div class="row bigRow formsRow">
+                <div class="form-group col-md-6  formItem">
+                  <label for="recipientInputCity">City</label>
+                  <input type="text" class="form-control" id="recipientInputCity">
+                </div>
+                <div class="form-group col-md-4 formItem">
+                  <label for="recipientInputState">State</label>
+                  <select id="recipientInputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-2 formItem">
+                  <label for="recipientInputZip">Zip</label>
+                  <input type="text" class="form-control" id="recipientInputZip">
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </section>
 
-    </section>
-
-    <section class="toolsSection">
-      <section class="myForm row height d-flex">
-        <div class="mainFormSection col-10">
-          <div class="container shadowedCard">
-
-            <div class="row bigRow formsRow">
-              <h5>Shipper:</h5>
-              <div class="form-group col-md-6 formItem">
-                <label for="inputName">Full Name</label>
-                <input type="password" class="form-control" id="inputName" placeholder="John Smith">
+      <section class="toolsSection">
+        <section class="myForm row height d-flex">
+          <div class="mainFormSection col-10">
+            <div class="container shadowedCard">
+              <div class="row bigRow formsRow">
+                <h5>Shipper:</h5>
+                <div class="form-group col-md-6 formItem">
+                  <label for="shipperInputName">Full Name</label>
+                  <input type="text" class="form-control" id="shipperInputName" placeholder="John Smith">
+                </div>
+                <div class="form-group col-md-6 formItem">
+                  <label for="shipperInputEmail">Email</label>
+                  <input type="email" class="form-control" id="shipperInputEmail" placeholder="Email">
+                </div>
               </div>
-              <div class="form-group col-md-6 formItem">
-                <label for="inputEmail">Email</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              <div class="row bigRow formsRow">
+                <div class="form-group formItem">
+                  <label for="shipperInputAddress">Address</label>
+                  <input type="text" class="form-control" id="shipperInputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group formItem">
+                  <label for="shipperInputAddress2">Address 2</label>
+                  <input type="text" class="form-control" id="shipperInputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
               </div>
-            </div>
+              <div class="row bigRow formsRow">
+                <div class="form-group col-md-6  formItem">
+                  <label for="shipperInputCity">City</label>
+                  <input type="text" class="form-control" id="shipperInputCity">
+                </div>
+                <div class="form-group col-md-4 formItem">
+                  <label for="shipperInputState">State</label>
+                  <select id="shipperInputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-2 formItem">
+                  <label for="shipperInputZip">Zip</label>
+                  <input type="text" class="form-control" id="shipperInputZip">
+                </div>
+              </div>
+              <div class="row bigRow formsRow">
 
-            <div class="row bigRow formsRow">
-              <div class="form-group formItem">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-              </div>
-              <div class="form-group formItem">
-                <label for="inputAddress2">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-              </div>
-            </div>
-
-            <div class="row bigRow formsRow">
-              <div class="form-group col-md-6  formItem">
-                <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
-              <div class="form-group col-md-4 formItem">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
-                  <option selected>Choose...</option>
-                  <option value="AL">Alabama</option>
-                  <option value="AK">Alaska</option>
-                  <option value="AZ">Arizona</option>
-                  <option value="AR">Arkansas</option>
-                  <option value="CA">California</option>
-                  <option value="CO">Colorado</option>
-                  <option value="CT">Connecticut</option>
-                  <option value="DE">Delaware</option>
-                  <option value="DC">District Of Columbia</option>
-                  <option value="FL">Florida</option>
-                  <option value="GA">Georgia</option>
-                  <option value="HI">Hawaii</option>
-                  <option value="ID">Idaho</option>
-                  <option value="IL">Illinois</option>
-                  <option value="IN">Indiana</option>
-                  <option value="IA">Iowa</option>
-                  <option value="KS">Kansas</option>
-                  <option value="KY">Kentucky</option>
-                  <option value="LA">Louisiana</option>
-                  <option value="ME">Maine</option>
-                  <option value="MD">Maryland</option>
-                  <option value="MA">Massachusetts</option>
-                  <option value="MI">Michigan</option>
-                  <option value="MN">Minnesota</option>
-                  <option value="MS">Mississippi</option>
-                  <option value="MO">Missouri</option>
-                  <option value="MT">Montana</option>
-                  <option value="NE">Nebraska</option>
-                  <option value="NV">Nevada</option>
-                  <option value="NH">New Hampshire</option>
-                  <option value="NJ">New Jersey</option>
-                  <option value="NM">New Mexico</option>
-                  <option value="NY">New York</option>
-                  <option value="NC">North Carolina</option>
-                  <option value="ND">North Dakota</option>
-                  <option value="OH">Ohio</option>
-                  <option value="OK">Oklahoma</option>
-                  <option value="OR">Oregon</option>
-                  <option value="PA">Pennsylvania</option>
-                  <option value="RI">Rhode Island</option>
-                  <option value="SC">South Carolina</option>
-                  <option value="SD">South Dakota</option>
-                  <option value="TN">Tennessee</option>
-                  <option value="TX">Texas</option>
-                  <option value="UT">Utah</option>
-                  <option value="VT">Vermont</option>
-                  <option value="VA">Virginia</option>
-                  <option value="WA">Washington</option>
-                  <option value="WV">West Virginia</option>
-                  <option value="WI">Wisconsin</option>
-                  <option value="WY">Wyoming</option>
-                </select>
-              </div>
-              <div class="form-group col-md-2 formItem">
-                <label for="inputZip">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-              </div>
-            </div>
-
-            <div class="row bigRow formsRow">
-
-              <div class="form-group">
-
-                <div class="form-check formItem">
-                  <input class="form-check-input" type="checkbox" id="emailShippingUpdates">
-                  <label class="form-check-label" for="emailShippingUpdates">
-                    Email Shipping Updates
-                  </label>
+                <div class="form-group">
+                  <div class="form-check formItem">
+                    <input class="form-check-input" type="checkbox" id="emailShippingUpdates">
+                    <label class="form-check-label" for="emailShippingUpdates">Email Shipping Updates</label>
+                  </div>
                 </div>
 
+                <button type="submit" class="btn btn-success" onclick="createShipmentStage1()">Confirm</button>
               </div>
-
-              <button type="submit" class="btn btn-success">Confirm</button>
             </div>
-
           </div>
-        </div>
+        </section>
       </section>
-    </section>
+    </form>
+  </div>
 
-    </section>
-  </form>
+  <div id="data2">
+    <form onsubmit="return false">
+      <section class="toolsSection">
+        <section class="myForm row height d-flex">
+          <div class="mainFormSection col-10">
+            <div class="container shadowedCard">
+              <div class="row bigRow formsRow">
 
-  <p> button should save data and lead to package size DETAILS page</p>
-  <p></p>
-  <p>which thne leads to PAYMENT page</p>
-  <p></p>
-  <p>which thne leads to REVIEW page</p>
+                <h2 class="coloredGreen centered">Package Details</h2>
+                <div class="row bigRow formsRow">
+                  <div class="col-md-4 cardSearchBar">
+                    <p>Package Size:</p>
+                  </div>
+                  <div class="form-group col-md-8 formItem">
+                    <select id="packageSize" class="form-control">
+                      <option selected>Choose weight...</option>
+                      <option value="less than 1 lb">less than 1 lb</option>
+                      <option value="less than 2 lbs">less than 2 lbs</option>
+                      <option value="less than 5 lbs">less than 5 lbs</option>
+                      <option value="less than 10 lbs">less than 10 lbs</option>
+                      <option value="less than 20 lbs">less than 20 lbs</option>
+                      <option value="20 lbs or more">20 lbs or more</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row bigRow formsRow">
+                  <div class="col-md-4 cardSearchBar">
+                    <p>Delivery Speed:</p>
+                  </div>
+
+                  <div class="form-group col-md-8 formItem">
+                    <select id="shippingSpeed" class="form-control">
+                      <option selected>Choose...</option>
+                      <option value="Overnight Guaranteed">Overnight Guaranteed</option>
+                      <option value="2 Day Guaranteed">2 Day Guaranteed</option>
+                      <option value="Ground (7-14 Days)">Ground (7-14 Days)</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-success topMargin" onclick="createShipmentStage2()">Confirm Package Options</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </form>
+  </div>
+
+  <div id="data3">
+    <form onsubmit="return false">
+      <section class="toolsSection">
+        <section class="myForm row height d-flex">
+          <div class="mainFormSection col-10">
+            <div class="container shadowedCard">
+              <div class="row bigRow formsRow">
+                <h2 class="coloredGreen centered">Payment Details</h2>
+                <div class="row bigRow formsRow">
+                  <div class="form-group col-md-12 formItem">
+                    <label for="paymentType">Payment Method:</label>
+                    <select id="paymentType" class="form-control">
+                      <option selected>Card Type...</option>
+                      <option value="Visa">Visa</option>
+                      <option value="Master Card">Master Card</option>
+                      <option value="Discover">Discover</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6 formItem">
+                    <label for="cardFirstName">First</label>
+                    <input type="text" class="form-control" id="cardFirstName" placeholder="First Name On Card">
+                  </div>
+                  <div class="form-group col-md-6 formItem">
+                    <label for="cardLastName">Last Name</label>
+                    <input type="text" class="form-control" id="cardLastName" placeholder="Last Name On Card">
+                  </div>
+                  <div class="form-group col-md-5  formItem">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" class="form-control" id="cardNumber">
+                  </div>
+                  <div class="form-group col-md-4 formItem">
+                    <label for="expirationDate">Expiration Date:</label>
+                    <input type="text" class="form-control" id="expirationDate">
+                  </div>
+                  <div class="form-group col-md-3 formItem">
+                    <label for="CVV">CVV</label>
+                    <input type="text" class="form-control" id="cvv">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-success" onclick="createShipmentStage3()">Confirm</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </form>
+  </div>
+
+  <div id="data4">
+    <form onsubmit="return false">
+      <section class="toolsSection">
+        <section class="myForm row height d-flex">
+          <div class="mainFormSection col-10">
+            <div class="container shadowedCard">
+              <div class="row bigRow formsRow">
+                <h2 class="coloredGreen centered">Review</h2>
+                <div class="row bigRow formsRow">
+                  <div id="reviewDiv">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-success" onclick="createShipmentStage4()">Confirm</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </form>
+  </div>
 
   <p>which thne leads to this is a demo only page</p>
-
-
   <hr />
-
   <footer>
     <div class="row footerContent">
 
@@ -391,6 +486,7 @@
       </div>
     </div>
   </footer>
+  <script src="createShipment.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/421fbecc74.js" crossorigin="anonymous"></script>
 </body>
