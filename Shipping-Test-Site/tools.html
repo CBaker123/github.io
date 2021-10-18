@@ -175,101 +175,105 @@
     </section>
 
     <section id="calculating" class="toolsSection">
-      <div class="container">
-        <div class="row height d-flex centeredContent">
-          <div class="col-10">
-            <div class="container shadowedCard">
-              <div class="row height d-flex  trackingPart">
-                <div class="col-12 cardTitle">
-                  <h4><i class="fa fa-calculator"></i> Calculate Costs</h4>
-                  <p>Enter your package specifications below.</p>
-                </div>
-                <div class="col-md-12 cardSearchBar">
-                  <p>Package Size:</p>
+      <form id="calculate-form" name="calculate-form" onclick="return false">
+        <div class="container">
+          <div class="row height d-flex centeredContent">
+            <div class="col-10">
+              <div class="container shadowedCard">
+                <div class="row height d-flex  trackingPart">
+                  <div class="col-12 cardTitle">
+                    <h4><i class="fa fa-calculator"></i> Calculate Costs</h4>
+                    <p>Enter your package specifications below.</p>
+                  </div>
+
+                  <div class="col-md-12 cardSearchBar">
+                    <p>Package Size:</p>
+                    <div class="form-group col-md-4 formItem">
+                      <select id="packageSize" class="form-control">
+                        <option selected>Choose weight...</option>
+                        <option value="less than 1 lb">less than 1 lb</option>
+                        <option value="less than 2 lbs">less than 2 lbs</option>
+                        <option value="less than 5 lbs">less than 5 lbs</option>
+                        <option value="less than 10 lbs">less than 10 lbs</option>
+                        <option value="less than 20 lbs">less than 20 lbs</option>
+                        <option value="20 lbs or more">20 lbs or more</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 cardSearchBar">
+                    <p>Distance:</p>
+                  </div>
+
                   <div class="form-group col-md-4 formItem">
-                    <select id="shippingSpeed" class="form-control">
-                      <option selected>Choose weight...</option>
-                      <option value="1">less than 1 lb</option>
-                      <option value="2">less than 2 lbs</option>
-                      <option value="5">less than 5 lbs</option>
-                      <option value="10">less than 10 lbs</option>
-                      <option value="20">less than 20 lbs</option>
-                      <option value="20+">20 lbs or more</option>
+                    <select id="distance" class="form-control">
+                      <option selected>Choose distance...</option>
+                      <option value="Local (100 miles)">Local (100 miles)</option>
+                      <option value="Domestic">Domestic</option>
+                      <option value="International">International</option>
                     </select>
                   </div>
-                </div>
-                <div class="col-md-12 cardSearchBar">
-                  <p>Distance:</p>
 
-                </div>
-              </div>
-              <div class="">
-                <div class="row bigRow formsRow">
-                  <div class="col-md-12 radioButton">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Domestic
-                      </label>
+                  <div class="col-md-12 cardSearchBar">
+                    <p>Delivery Speed:</p>
+                    <div class="form-group col-md-4 formItem">
+                      <select id="shippingSpeed" class="form-control">
+                        <option selected>Choose speed...</option>
+                        <option value="Overnight Guaranteed">Overnight Guaranteed</option>
+                        <option value="2 Day Guaranteed">2 Day Guaranteed</option>
+                        <option value="Ground (7-14 Days)">Ground (7-14 Days)</option>
+                      </select>
                     </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        International
-                      </label>
+                    <div class="col-2 cardButton">
+                      <button class="btn btn-success" onclick="shipcost()">Calculate</button>
                     </div>
                   </div>
+
+<div id="calculatedCost">
+
+</div>
+
                 </div>
-              </div>
-              <div class="col-md-12 cardSearchBar">
-                <p>Delivery Speed:</p>
-                <div class="form-group col-md-4 formItem">
-                  <select id="shippingSpeed" class="form-control">
-                    <option selected>Choose...</option>
-                    <option value="1Day">Overnight Guaranteed</option>
-                    <option value="2Day">2 Day Guaranteed</option>
-                    <option value="7Day">Ground (7-14 Days)</option>
-                  </select>
-                </div>
-                <div class="col-2 cardButton">
-                  <button class="btn btn-success" role="button">Calculate</button>
-                </div>
+
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </section>
 
     <section id="voiding" class="toolsSection">
-      <div class="container">
-        <div class="row height d-flex centeredContent">
-          <div class="col-10">
-            <div class="container shadowedCard">
-              <div class="row height d-flex  trackingPart">
-                <div class="col-12 cardTitle">
-                  <h4><i class="fa fa-ban"></i> Void Shipment</h4>
-                  <hr>
-                  <h4 class="quickContent">Please Log In</h4>
-                </div>
-                <div class="form-group col-md-12 formItem">
-                  <label for="Username">Username</label>
-                  <input type="text" class="form-control" id="Username" placeholder="Username">
-                </div>
+      <form id="login-form" name="login-form" onclick="return false">
+        <div class="container">
+          <div class="row height d-flex centeredContent">
+            <div class="col-10">
+              <div class="container shadowedCard">
+                <div class="row height d-flex  trackingPart">
+                  <div class="col-12 cardTitle">
+                    <h4><i class="fa fa-ban"></i> Void Shipment</h4>
+                    <hr>
+                    <h4 class="quickContent">Please Log In</h4>
+                  </div>
 
-                <div class="form-group col-md-12 formItem">
-                  <label for="Password">Password</label>
-                  <input type="password" class="form-control" id="Password" placeholder="Password">
+                  <div class="form-group col-md-12 formItem">
+                    <label for="Username">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
+                  </div>
+
+                  <div class="form-group col-md-12 formItem">
+                    <label for="Password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                  </div>
                 </div>
-              </div>
-              <div class="col-2 cardButton">
-                <button class="btn btn-success" role="button">Login</button>
+                <div class="col-2 cardButton">
+                  <button class="btn btn-success" onclick="login()">Login</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      </div>
+        </div>
+      </form>
     </section>
 
   </section>
@@ -309,8 +313,10 @@
       </div>
     </div>
   </footer>
+
+  <script src="support.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/421fbecc74.js" crossorigin="anonymous"></script>
-  </body>
+</body>
 
-  </html>
+</html>
