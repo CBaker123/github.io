@@ -20,7 +20,7 @@ p {
 
 h2 {
   font-weight: 600;
-  padding: 2rem 0 2rem 0;
+  padding: 2.5rem 0 2.5rem 0;
 }
 
 hr {
@@ -45,7 +45,11 @@ hr {
 
 /* WORK SECTION*/
 .work {
-  padding: 0 6rem 6rem 6rem;
+  padding: 1rem 6rem 1.5rem 6rem;
+}
+
+.res {
+  padding-bottom: 6rem;
 }
 
 .work-row {

@@ -4,10 +4,7 @@ body {
   font-size: 12px;
   line-height: 1.15rem;
   margin: .5in 1in 1in;
-
-
 }
-
 
 hr {
 border: 2px;
@@ -65,7 +62,7 @@ h4 {
 }
 
 .frameworksListHr {
-  text-indent: 2rem:
+  text-indent: 2rem;
 }
 
 .trainingSection li {
