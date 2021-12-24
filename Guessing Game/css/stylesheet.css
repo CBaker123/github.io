@@ -1,0 +1,42 @@
+.centerText {
+  text-align: center;
+}
+
+.heading {
+  padding: 10px;
+}
+
+
+.hiddenNumber {
+  width: 50px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px;
+}
+
+.infoRow {
+  justify-content: center;
+  margin: 20px;
+}
+
+.guessesLeftBox {
+  display: inline;
+  padding: 5px;
+}
+
+.guesses {
+  margin-bottom: 20px;
+}
+.messageBox {
+  margin: 20px;
+}
+
+p {
+  display: inline;
+}
+
+.dataRow {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
