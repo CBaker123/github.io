@@ -6,6 +6,8 @@ console.log(secretNumber);
 function youWin() {
   document.getElementById("message").innerHTML = "you win";
   document.getElementById("secretNumber").innerHTML = secretNumber;
+  document.body.style.backgroundColor = "#FFFF33";
+
 }
 
 function youLose() {
@@ -51,4 +53,5 @@ function setGame(){
   document.getElementById("message").innerHTML = "Good Luck";
   document.getElementById("secretNumber").innerHTML = "?";
   console.log(secretNumber);
+  document.body.style.backgroundColor = "#E5F6DF";
 }
