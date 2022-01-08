@@ -1,5 +1,7 @@
 body {
   background-color: #E5F6DF;
+  border-style: solid;
+  border-width: 6px;
 }
 
 .centerText {
